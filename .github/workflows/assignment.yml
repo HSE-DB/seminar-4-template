@@ -1,0 +1,22 @@
+name: Docker assignment
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check Docker and Compose
+        run: |
+          docker version
+          docker compose version
+      - name: Check assignment
+        run: python3 .tests/test_docker_assignment.py
