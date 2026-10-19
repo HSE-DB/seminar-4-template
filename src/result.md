@@ -58,7 +58,7 @@
 
 ## 5. Собственный образ
 
-Файлы: [Dockerfile](./lab/hello/Dockerfile), [программа](./lab/hello/greet.sh), [.dockerignore](./lab/hello/.dockerignore).
+Файлы: [Dockerfile](lab/hello/Dockerfile), [программа](./lab/hello/greet.sh), [.dockerignore](./lab/hello/.dockerignore).
 
 | Эксперимент | Результат |
 | --- | --- |
